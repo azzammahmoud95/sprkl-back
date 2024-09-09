@@ -8,7 +8,6 @@ import bodyParser from "body-parser";
 import usersRoutes from "./routes/users-routes.js";
 
 // -------- Express Config ---------- //
-
 const app = express();
 app.use(express.json());
 
@@ -16,7 +15,7 @@ app.use(express.json());
 // ------- CORS Configuration ---------- //
 const corsOptions = {
     origin: [process.env.FRONT_URL], 
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    methods: ['GET', 'POST', 'PATCH','PUT', 'DELETE'],
     credentials: true
   };
   
